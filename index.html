@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href=".\some1.css"/>
+        <script class="one">
+            function startTime() {
+              var today = new Date();
+              var h = today.getHours();
+              var m = today.getMinutes();
+              var s = today.getSeconds();
+              m = checkTime(m);
+              s = checkTime(s);
+              document.getElementById('txt').innerHTML =
+              h + ":" + m + ":" + s;
+              var t = setTimeout(startTime, 500);
+            }
+            function checkTime(i) {
+              if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+              return i;
+            }
+            </script>
+        <title>Travel UK</title>
+    </head>
+    <body onload="startTime()">
+        <div id="txt"></div>
+         <header>
+            <h1>Travel UK</h1>
+         </header>
+         <div>
+            <a href=".\cambridge1.html">CAMBRIDGE</a>
+            <img src="F:\cambridge.jpg">
+            <img src="F:\Edinburgh.jfif">
+            <a href="https://www.planetware.com/tourist-attractions-/edinburgh-sco-loth-edin.htm">EDINBURGH<br></a>
+            <a href="https://www.planetware.com/tourist-attractions-/glasgow-sco-stra-glas.htm">GLASGOW</a>
+            <img src="F:\glasgow.jfif">
+            <img src="F:\london.jpg">
+            <a href="https://www.planetware.com/tourist-attractions-/london-eng-l-lon.htm">LONDON</a>
+        </div>
+    </body>
+</html>
