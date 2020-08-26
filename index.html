@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+        
+        <script class="one">
+            function startTime() {
+              var today = new Date();
+              var h = today.getHours();
+              var m = today.getMinutes();
+              var s = today.getSeconds();
+              m = checkTime(m);
+              s = checkTime(s);
+              document.getElementById('txt').innerHTML =
+              h + ":" + m + ":" + s;
+              var t = setTimeout(startTime, 500);
+            }
+            function checkTime(i) {
+              if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+              return i;
+            }
+            </script>
+        
+        <title>Travel UK</title>
+    </head>
+    <body onload="startTime()">
+
+        <div id="txt"></div>
+        
+         <header>
+            <h1>Travel UK</h1>
+         </header>
+         
+
+         <div class="city_group">
+
+            <a href="cambridge/cambridge.html" class="city_container"> 
+                <div class="city_img_container">
+                    <img src="img/cambridge.jpg" style="height:100%; margin-left:-95%;">
+                </div>
+                <div class="city_text" >Cambridge</div>
+            </a>
+
+            <a href="edinburgh/edinburgh.html" class="city_container"> 
+                <div class="city_img_container">
+                    <img src="img/edinburgh.jpg" style="height:100%; margin-left:-165%;" > 
+                </div>
+                <div class="city_text" >Edinburgh</div>
+            </a>
+
+            <a href="london/london.html" class="city_container"> 
+                <div class="city_img_container">
+                    <img src="img/london.jpg" style="height:100%; margin-left:-95%;">
+                </div>
+                <div class="city_text" >London</div>
+            </a>
+
+            <a href="glasgow/glasgow.html" class="city_container"> 
+                <div class="city_img_container">
+                    <img src="img/glasgow.jpg" style="height:100%; margin-left:-165%;" > 
+                </div>
+                <div class="city_text" >Glasgow</div>
+            </a>
+            
+        
+        
+        </div>
+
+        <footer style="width:100%; margin-top:100px;">
+            <a href="form.html"><p style="text-align:center; color:black;">Contact Us</p></a>
+        </footer>
+            
+        
+    </body>
+</html>

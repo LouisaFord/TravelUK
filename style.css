@@ -1,0 +1,16 @@
+body {background-color:#E7F6FF;}
+
+.city_group {width:850px; height:450px; display:flex; margin:auto;}
+
+.city_container {width:200px; height:100%; margin-left:10px; text-decoration:none; color:black;}
+
+.city_img_container {width:200px; height:420px; margin-bottom:5px; overflow:hidden;}
+
+.city_text {width:180px; height:20px; margin:auto; text-align:center;}
+
+h1 {font-size:40px; text-align:center;}
+
+.one{
+    text-align: right;
+}
+
